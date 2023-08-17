@@ -1,10 +1,9 @@
-//Este componente deberia recibir por props y mostrar en pantalla la informacion
-//que envia el usuario
+import React from 'react';
 
-function Card() {
+function Card({ input1, input2 }) {
   return (
-    <div>
-      <h2>Esto es un componente</h2>
+    <div className="Card">
+      <p>Hola! {input1}, sabemos que tu instrumento favorito es {input2}!</p>
     </div>
   );
 }
